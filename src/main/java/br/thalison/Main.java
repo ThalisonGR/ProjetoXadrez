@@ -1,7 +1,15 @@
 package br.thalison;
 
+import br.thalison.xadrez.PartidaXadrez;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        PartidaXadrez partidaXadrez = new PartidaXadrez();
+
+        UI.apresentaTabuleiro(partidaXadrez.getPecas());
+
+
+
     }
 }
