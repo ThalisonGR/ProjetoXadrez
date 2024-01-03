@@ -1,6 +1,11 @@
 package br.thalison.xadrez;
 
+import br.thalison.boardgame.Posicao;
 import br.thalison.boardgame.Tabuleiro;
+import br.thalison.xadrez.pecas.Rei;
+import br.thalison.xadrez.pecas.Torre;
+
+import java.awt.*;
 
 public class PartidaXadrez {
 
@@ -9,6 +14,7 @@ public class PartidaXadrez {
     public PartidaXadrez() {
 
         tabuleiro = new Tabuleiro(8,8);
+        iniciaPartida();
     }
 
     //Retorna a matriz de peças da partida de Xadrez
@@ -20,6 +26,11 @@ public class PartidaXadrez {
             }
         }
         return  matriz;
+    }
+
+
+    private void iniciaPartida(){
+        tabuleiro.lugarPeca(new Torre(tabuleiro , Cor.WHITE) , new Posicao(2,1) );
     }
 
 }
