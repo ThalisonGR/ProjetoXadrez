@@ -1,11 +1,11 @@
 package br.thalison.boardgame;
 
-public class Position {
+public class Posicao {
 
     private int linhas;
     private int coluna;
 
-    public Position(int linhas, int coluna) {
+    public Posicao(int linhas, int coluna) {
         this.linhas = linhas;
         this.coluna = coluna;
     }
